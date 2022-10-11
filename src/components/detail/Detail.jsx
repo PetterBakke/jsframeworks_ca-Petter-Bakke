@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 function Detail() {
   const [wp, setWP] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [ error, setError] = useState(null);
+  const [error, setError] = useState(null);
 
   const { id } = useParams();
 
@@ -17,14 +17,14 @@ function Detail() {
       try {
         const response = await fetch(url);
 
-        if(response.ok) {
+        if (response.ok) {
           const json = await response.json();
           console.log(json);
           setWP(json);
-        } else{
+        } else {
           setError("An error occured");
         }
-      } catch(error) {
+      } catch (error) {
         setError(error.toString());
       } finally {
         setLoading(false);
