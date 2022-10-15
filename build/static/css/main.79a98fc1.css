@@ -424,9 +424,7 @@ select:disabled {
 [type=button],
 [type=reset],
 [type=submit],
-button {
-  -webkit-appearance: button
-}
+
 
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -485,12 +483,7 @@ legend+* {
 }
 
 [type=search] {
-  -webkit-appearance: textfield;
   outline-offset: -2px
-}
-
-::-webkit-search-decoration {
-  -webkit-appearance: none
 }
 
 ::-webkit-color-swatch-wrapper {
@@ -502,7 +495,6 @@ legend+* {
 }
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
   font: inherit
 }
 
